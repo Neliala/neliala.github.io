@@ -1,257 +1,96 @@
-* {
+ * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body {
-    font-family: sans-serif;
-}
-img {
-    width: 100%;
-    height: auto;
-}
-.wrapper {
-    margin: 0 auto;
-    max-width: 1024px;
-}
-
-.headerBlock {
-    background: lightgrey;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 15px;
-}
-
-.logo {
-    width: 230px;
-}
-.mainBunner {
-    background: lightgrey;
-}
-.headerMenu__item {
-    display: inline-block;
-    list-style: none;
-    padding: 12px 24px;
-}
-
-.headerMenu__item a {
-    text-decoration: none;
-}
-
-.headerMenu__item:hover {
-    background: darkgray;
-}
-
-.headerMenu__item:hover a {
-    color: white;
-}
-
-.headerMenu__item:hover {
-    color:white;
-    text-decoration: none;
-}
-.bunnerBlock {
-    background: lightgray;
-}
-.wrapper {
-    margin: 0 auto;
-    max-width: 1024px;
-}
-.mainBanner {
-    background: lightgrey;
-    display: flex;
-    align-items: center;
-}
-.mainBannerTextblock {
-    padding: 30px 25px 60px;
-    color: black;
-    text-decoration: none;
-}
-.mainBanner__title {
-    padding: 0 0 5px 0;
-    width: 330px;
-    font-style: italic;
-    font-size: 25px;
-    font-weight: normal;
-    color: brown;
-}
-.mainBanner__subtitle {
-}
-.mainBanner__userAction {
-    align-items: center;
-    display: flex;
-    background: black;
-    width: 200px;
-    padding: 2px;
-}
-    .userAction__icon {
-        max-width: 25%;
-        padding: 10px;
-        color: aquamarine;
-    }
-.userAction__text {
-    padding: inherit;
-    width: 110px;
+.body {
+    font-family: "roboto", arial, sans-serif;
     color: whitesmoke;
 }
-.mainBannerImgContent:hover {
-transform: rotateX(20deg)
+.wrapper {
+    background: url(img/background1.png);
+    height: 700px;
+    margin:10px;
+    max-width: 1024px;
 }
-
-main {
-    display: flex;
-    align-items: flex-start;
-}
-.mainContent {
-    width: 70%;
-    padding-right: 25px;
-}
-.mainArticle {
+.navigation {
+    margin: 20px;
+    float: right;
     display: flex;
 }
-.mainArticleContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.logo {
+    height: 50px;
+    padding: 20px;
 }
-.mainArticle__img {
-    width: 200px;
-    min-width: 200px;
-    margin-right: 25px;
+.navigation__item {
+    display: inline;
 }
-.mainArticleContent h2 {
-    margin: 5px 0 15px 0;
-}
-.mainArticleContent p {
-    margin-bottom: 15px;
-}
-.sliderManager {
-    display: flex;
-    margin-left: auto;
-}
-.sliderManager__arrowRight {
-    width: 10px;
-    padding: 8px 12px;
-    background: darkgray;
-    order: 2;
-}
-.sliderManager__arrowLeft {
-    width: 10px;
-    padding: 8px 12px;
-    background: #696969;
-    order: 1;
-}
-.articlesBlock {
-    width: 700px;
-    margin: 0;
-}
-.articlesBlock1 {
-    padding: 20px 20px 10px 20px;
-    height: 215px;
-    text-align: justify;
-    column-count:3;
-    column-gap: 20px;
-}
-    .articlesBlock h3 {
-       padding: 10px 20px 0 0;
-    }
-    .articlesBlock p {
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .articlesBlock h4 {
-        font-size: large;
-        padding: 10px 20px 0 0;
-    }
-        .articlesBlock p {
-            justify-content: space-between;
-            padding-top: 10px;
-        }
-        .articlesBlock h5 {
-            font-size: large;
-            padding: 10px 20px 0 0;
-        }
-            .articlesBlock p {
-                justify-content: space-between;
-                padding-top: 10px;
-            }
-.articlesBlock2 {
-    padding: 15px;
-    height: 215px;
-    text-align: justify;
-    column-count:3;
-    column-gap: 20px;
-}
-.articlesBlock h6 {
-    font-size: large;
-    padding: 5px 20px 0 0;
-}
-.articlesBlock p {
-    justify-content: space-between;
-    padding-top: 10px;
-}
-.articlesBlock h7 {
-    font-size: large;
-    font-weight: bold;
-    padding: 10px 20px 0 0;
-}
-.articlesBlock p {
-    justify-content: space-between;
-    padding-top: 10px;
-}
-.articlesBlock h8 {
-    font-size: large;
-    font-weight: bold;
-    padding: 10px 20px 0 0;
-}
-.articlesBlock p {
-    justify-content: space-between;
-    padding-top: 10px;
-}
-.articlesBlock3 {
-    padding: 15px;
-    height: 215px;
-    text-align: justify;
-    column-count:3;
-    column-gap: 20px;
-}
-.articlesBlock h9 {
-    font-size: large;
-    font-weight: bold;
-    padding: 5px 20px 0 0;
-}
-.articlesBlock p {
-    justify-content: space-between;
-    padding-top: 10px;
-}
-.articlesBlock h10 {
-    font-size: large;
-    font-weight: bold;
-    padding: 10px 20px 0 0;
-}
-.articlesBlock p {
-    justify-content: space-between;
-    padding-top: 10px;
-}
-.articlesBlock h11 {
-    font-size: large;
-    font-weight: bold;
-    padding: 10px 20px 0 0;
-}
-.sideBar {
-    width: 30%;
-    height: 300px;
+.item-active a{
     text-decoration: none;
 }
-footer {
-    background: dimgrey;
-    height: 65px;
-    margin-top: 0px;
-    width: 100%;
+.navigation__item a {
+    padding: 10px;
+    text-decoration: none;
+    text-color: blue;
+    font-family: Tahoma bold;
 }
-.footer_text {
- color: white;
- text-align: center;
-    padding: 25px 0;
+.main__text h1 {
+    padding: 200px 150px 20px 100px;
+    text-align: center;
 }
-
+.main__text p {
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 100px;
+}
+.main__button {
+    position: absolute;
+    margin: 200px 400px;
+}
+.main__button__text {
+    padding: 5px;
+    border: 1px solid aquamarine;
+    text-align: center;
+    color: darkcyan;
+}
+.main__dots {
+    position: absolute;
+    margin-bottom: 200px;
+    padding: 15px 20px;
+    margin-left: 20px;
+}
+.content {
+    max-width: 1024px;
+    height: 320px;
+    display: inline;
+}
+.logo {
+    height: 150px;
+    float: left;
+    padding-left: 250px;
+}
+.text {
+    display: block;
+    float: right;
+    padding-right: 450px;
+    padding-bottom: 150px;
+}
+ .button1 {
+     position: absolute;
+     padding-right: 300px;
+     padding-top: 200px;
+ }
+ .button1__box {
+     width: 122px;
+     height: 42px;
+ }
+ .button1__text {
+     padding: 5px;
+     border: 1px solid aquamarine;
+     color: darkcyan;
+ }
+.videoban {
+    background-image: url(img/background_video.png);
+    max-width: 1024px;
+}
